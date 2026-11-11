@@ -1,0 +1,68 @@
+/* header.css is styles for the header.php
+Styling for the top announcement bar, brand logo, 
+and all that's included in the header */
+
+.top-bar {
+    background-color: #7F1D1D;
+    color: #FEF3C7;
+    text-align: center;
+    padding: 7px 15px;
+    font-size: 0.85rem;
+    letter-spacing: 0.4px;
+}
+
+.site-header {
+    background-color: #1B4332;
+    color: #FFFFFF;
+    padding: 18px 0;
+    border-bottom: 4px solid #D97706;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: #F59E0B;
+}
+
+.tagline {
+    font-size: 0.85rem;
+    color: #D1FAE5;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: #F3F4F6;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: #D97706;
+    color: #FFFFFF;
+}

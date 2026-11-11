@@ -1,0 +1,40 @@
+/* 
+   this css file is for the footer.php. Styling for the 
+   3-column footer and copyright bar in the bottom */
+
+.site-footer {
+    background-color: #1B4332;
+    color: #E5E7EB;
+    padding-top: 40px;
+    margin-top: 50px;
+    border-top: 4px solid #D97706;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-col h3 {
+    color: #F59E0B;
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list li {
+    margin-bottom: 6px;
+}
+
+.footer-bottom {
+    background-color: #122E22;
+    text-align: center;
+    padding: 14px;
+    font-size: 0.85rem;
+    color: #9CA3AF;
+}

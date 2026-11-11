@@ -1,0 +1,251 @@
+/* 
+   this menu.css is for the menu php. 
+Styling for the Menu page filter bar, 
+   dish cards, and order form */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.page-header h1 {
+    color: #1B4332;
+    font-size: 2.2rem;
+    margin-bottom: 6px;
+}
+
+/* Category Filter Pills */
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.btn-filter {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #1B4332;
+    color: #1B4332;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.btn-filter:hover,
+.btn-filter.active {
+    background-color: #1B4332;
+    color: #FFFFFF;
+}
+
+/* Menu Item Grid & Cards */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 22px;
+}
+
+.menu-card {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.menu-card-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.category-pill {
+    background: #ECFDF5;
+    color: #1B4332;
+    padding: 3px 9px;
+    border-radius: 4px;
+}
+
+.spice-pill {
+    background: #FEF2F2;
+    color: #991B1B;
+    padding: 3px 9px;
+    border-radius: 4px;
+}
+
+.menu-card h3 {
+    color: #1B4332;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.menu-card p {
+    color: #4B5563;
+    font-size: 0.93rem;
+    margin-bottom: 16px;
+}
+
+.menu-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #F3F4F6;
+    padding-top: 12px;
+}
+
+.dish-price {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #7F1D1D;
+}
+
+.text-link {
+    color: #D97706;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.section-divider {
+    border: none;
+    border-top: 2px dashed #D1D5DB;
+    margin: 45px 0;
+}
+
+/* this is for the Quick Order Form & Live Receipt */
+.order-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+.order-form-box {
+    background: #FFFFFF;
+    padding: 28px;
+    border-radius: 10px;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.order-form-box h2 {
+    color: #1B4332;
+    margin-bottom: 8px;
+}
+
+.order-form-box p {
+    font-size: 0.92rem;
+    color: #4B5563;
+    margin-bottom: 20px;
+}
+
+.alert-error {
+    background-color: #FEF2F2;
+    color: #991B1B;
+    border: 1px solid #F87171;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #1F2937;
+    font-size: 0.92rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.receipt-card {
+    padding: 28px;
+    border-radius: 10px;
+    border: 2px solid #D97706;
+    background: #FFFBEB;
+}
+
+.placeholder-receipt {
+    border-style: dashed;
+    text-align: center;
+    color: #6B7280;
+}
+
+.receipt-badge {
+    display: inline-block;
+    background: #1B4332;
+    color: #FFFFFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.receipt-lines {
+    list-style: none;
+    margin: 16px 0;
+}
+
+.receipt-lines li {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    font-size: 0.95rem;
+}
+
+.receipt-divider {
+    border-top: 1px solid #FDE68A;
+    margin-top: 6px;
+    padding-top: 10px !important;
+}
+
+.receipt-total {
+    font-size: 1.15rem !important;
+    color: #7F1D1D;
+    border-top: 2px solid #D97706;
+    margin-top: 8px;
+    padding-top: 10px !important;
+}
+
+.pickup-estimate {
+    background: #1B4332;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 14px;
+}
